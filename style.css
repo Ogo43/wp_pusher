@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.container{
+    border: 2px solid red;
+}
+
+.header{
+    border: 2px dashed gold;
+}
+
+.logo{
+    border: 2px solid pink;
+}
+
+.logo_icon{
+    border: 2px solid purple;
+    /* padding: 5px; */
+    margin: 0px;
+}
+
+.nav{
+    border: 2px solid darkblue;
+}
+
+.nav_bar{
+    border: 2px solid red;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* height: 120px; */
+}
+
+.lnk_grp{
+    border: 2px solid green;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.link a{
+    border: 2px solid yellow;
+    text-decoration: none;
+    color: #424242;
+}
+
+.link_active a{
+    border: 2px solid forestgreen;
+    text-decoration: none;
+    color: #424242;
+    /* border: 2px solid #808080; */
+    margin: 60px 0px 0px 0px;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+
+@media screen and (min-width: 600px){
+    .header{
+        border: 2px dashed gold;
+        display: flex;
+        /* width: 1360px;
+        height: 73px; */
+    } 
+    
+    .logo{
+        border: 2px solid pink;
+        width: 200px;
+        height: 39px;
+        /* padding: 7.5px; */
+        margin: 10px 3px;
+    }
+    
+    .logo_icon{
+        margin: 0px;
+    }
+    
+    .nav{
+        border: 2px solid darkblue;
+        width: 476px;
+        height: 40px;
+        /* padding: 7.5px; */
+        margin: 10px auto;
+    }
+    
+    .nav_bar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lnk_grp{
+        border: 2px solid green;
+        display: flex;
+        justify-content: space-between;
+        flex: 0 1 80%;
+    }
+    
+    .link_active a{
+        width: 91px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 760px){
+    .header{
+        border: 2px dashed gold;
+        margin: 0;
+    } 
+    
+    .logo{
+        border: 2px solid pink;   
+    }
+
+    .logo_icon{
+    }
+    
+    .nav{
+        border: 2px solid darkblue;
+    }
+    
+    .nav_bar{
+    } 
+    
+    .link_active a{
+        margin: 0;
+    }
+}
