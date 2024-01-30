@@ -1,0 +1,1486 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  margin-top: 150px;
+}
+
+.container section {
+  display: block;
+  width: 100%;
+}
+
+.container footer {
+  display: block;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0.5%;
+  height: 70px;
+  font-size: 16px;
+  /* margin-top: 15px; */
+  background-color: #ffffff;
+}
+
+nav .img_logo {
+  float: left;
+  width: 13%;
+  height: 70%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 25%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+nav .links a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav .links_1 {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 17%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px 0px 250px;
+}
+
+nav .links_1 .post_link a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 5px 9px;
+  border-radius: 30px;
+}
+
+#nav-toggle {
+  position: absolute;
+  /* display: none; */
+}
+
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 35%;
+  transform: translateY(-50%);
+  margin-top: 7px;
+}
+
+nav .icon-burger .line {
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  margin: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sec_1,
+.sec_2 {
+  padding: 20px;
+}
+
+.trainings {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.trainings h3 {
+  text-align: center;
+  color: #43b843;
+  font-size: 18px;
+  width: 300px;
+  font-family: "Secular One", sans-serif;
+  letter-spacing: 1px;
+  margin: 70px 0 20px 0;
+}
+
+.mobile_employee {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.mobile_employee h1 {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Secular One", sans-serif;
+  text-align: center;
+  width: 697.49px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.elevate_skills {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.elevate_skills p {
+  color: #888484;
+  width: 800px;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #25a125;
+  font-size: 20px;
+  padding: 18px 25px;
+  width: 180px;
+  text-align: center;
+  border-radius: 32px;
+}
+
+.rider {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 25px;
+}
+
+.rider img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  image-rendering: auto;
+  width: 90%;
+  height: 90%;
+}
+
+.delivery {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 12px;
+}
+
+.delivery p {
+  color: #706d6d;
+}
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.social_media .whatsapp_link,
+.email_link,
+.file_link,
+.qr-code_link {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.social_media .whatsapp_link {
+  width: 135px;
+  height: 33px;
+}
+
+.social_media .email_link {
+  width: 93px;
+  height: 33px;
+}
+
+.social_media .file_link {
+  width: 80px;
+  height: 33px;
+  row-gap: 10px;
+}
+
+.social_media .qr-code_link {
+  width: 118px;
+  height: 33px;
+}
+
+.social_media .whatsapp_link img,
+.email_link img,
+.file_link img,
+.qr-code_link img {
+  margin: 2px;
+  padding: 2.5px;
+}
+
+.social_media .whatsapp_link a,
+.email_link a,
+.file_link a,
+.qr-code_link a {
+  text-decoration: none;
+  color: #706d6d;
+  padding: 2.5px;
+}
+
+.rate_training {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.rate_training .training_reduction,
+.Improve_training,
+.training_increase {
+  width: 271.66px;
+  height: 152px;
+  border-radius: 24px;
+  padding: 24px 24px 28px;
+}
+
+.rate_training .training_reduction {
+  background-color: #91a9f8;
+}
+
+.rate_training .Improve_training {
+  background-color: #d08ff7;
+}
+
+.rate_training .training_increase {
+  background-color: #9ce5d9;
+}
+
+.rate_training .percent_1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+}
+
+.rate_training .process {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.rate_training .process h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: center;
+  color: #514e4e;
+  width: 223.66px;
+  height: 48px;
+}
+
+.mini_quote {
+  margin-bottom: 300px;
+}
+
+.mini_quote p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #9f9b9b;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 150%;
+}
+
+.online_training {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px;
+  margin-bottom: 230px;
+}
+
+.gen_training {
+  width: 370.5px;
+  height: 215px;
+  margin-top: 70px;
+}
+
+.mobile_training h3 {
+  color: #b68e1f;
+  font-size: 15px;
+  margin-bottom: 14px;
+  line-height: 150%;
+  text-align: left;
+}
+
+.align_training {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 175%;
+  text-align: start;
+  margin-bottom: 17px;
+  width: 337.5px;
+}
+
+.outdated_system {
+  color: #706d6d;
+  font-size: 17px;
+  text-align: start;
+  width: 368px;
+}
+
+.training_advice {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.general_speech {
+  background-color: #f7dc8f;
+  width: 298px;
+  height: 174.2px;
+  border-radius: 24px;
+  padding: 25px;
+}
+
+.symbol {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  opacity: 1;
+  background-color: rgba(57, 44, 5, 0.15);
+  margin-bottom: 12px;
+}
+
+.symbol svg {
+  margin: 5px 6.5px 10px;
+}
+
+.speech p {
+  color: #47250c;
+  font-size: 16px;
+  display: inline-block;
+  width: 241px;
+}
+
+.speech span {
+  font-size: 16px;
+  font-weight: 900;
+  color: #180b02;
+}
+
+.mobile_work {
+  background-color: #1d9f4d;
+  display: flex;
+  padding: 120px 50px;
+  width: 100%;
+  gap: 50px;
+  margin-bottom: 350px;
+}
+
+.online_work {
+  color: #ffffff;
+  width: 600px;
+  padding: 40px;
+}
+
+.chef_pic img {
+  width: 550px;
+  height: auto;
+  border-radius: 24px;
+  object-fit: cover;
+  image-rendering: auto;
+}
+
+.online_work .easy_training {
+  font-size: 13.5px;
+  margin-bottom: 20px;
+}
+
+.online_work .boost_performance p {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.online_work .micro_training p {
+  font-size: 15.8px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.btn_1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+
+.btn_1 a {
+  text-decoration: none;
+  color: #392c05;
+  background-color: #f7dc8f;
+  font-size: 18.5px;
+  padding: 18px 25px;
+  width: 170px;
+  text-align: center;
+  border-radius: 32px;
+}
+
+.gen_ads {
+  width: 500px;
+}
+
+.check_list {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.check_list img {
+  width: 22px;
+  height: 22px;
+  color: white;
+}
+
+.training_steps {
+  display: flex;
+  padding: 0 70px;
+  gap: 80px;
+  margin-bottom: 350px;
+}
+
+.ease_training {
+  text-align: start;
+  /* height: 300px; */
+}
+
+.effective_training {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.simple_kuji {
+  font-size: 18px;
+  color: #706d6d;
+  width: 420px;
+}
+
+.btn_2 {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn_2 a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #25a125;
+  font-size: 19px;
+  padding: 16px 25px;
+  width: 170px;
+  text-align: center;
+  border-radius: 32px;
+}
+
+.simply_training {
+  width: 625px;
+}
+
+.kuji_creativity,
+.training_sec {
+  margin-bottom: 120px;
+}
+
+.onboarding_pic img {
+  margin-bottom: 20px;
+}
+
+.flexible_training .train_employees {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.building_block p,
+.share_link p,
+.understand_training p {
+  color: #706d6d;
+  font-size: 17.5px;
+}
+
+.building_block p {
+  width: 620px;
+}
+
+.share_link p {
+  width: 599px;
+}
+
+.understand_training p {
+  width: 620px;
+}
+
+.pro_service {
+  border: 2px solid lightcoral;
+  margin-bottom: 400px;
+}
+
+.gen_img {
+  width: 100%;
+  position: relative;
+  border: 2px solid blue;
+}
+
+.img_1 {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  /* object-position: center; */
+  /* object-fit: fill; */
+  /* image-rendering: auto; */
+  border-radius: 20px;
+}
+
+.img_2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 11;
+  /* object-position: center; */
+  /* object-fit: fill; */
+  /* image-rendering: auto; */
+  border-radius: 20px;
+}
+
+.img_3 img {
+  position: absolute;
+  left: 0;
+  top: 500px;
+  object-position: center;
+  object-fit: fill;
+  image-rendering: auto;
+  border-radius: 20px;
+}
+
+.img_4 img {
+  position: absolute;
+  left: 1120px;
+  top: 600px;
+  object-position: center;
+  object-fit: fill;
+  image-rendering: auto;
+  border-radius: 20px;
+}
+
+/* .sub_occupation img,
+.sub_occupation_1 img {
+  border-radius: 12px;
+} */
+
+.africa_mobile {
+  border: 2px solid slateblue;
+  text-align: center;
+  margin: 150px 50px;
+}
+
+.grown_class {
+  border: 2px solid red;
+  color: #43b843;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.success_workforce {
+  border: 2px solid mediumturquoise;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.success_workforce p {
+  border: 2px solid mediumturquoise;
+  font-size: 36px;
+  font-weight: 600;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.face_across {
+  border: 2px solid navy;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 45px;
+}
+
+.face_across p {
+  border: 2px solid navy;
+  color: #706d6d;
+  font-size: 17px;
+  width: 480px;
+}
+
+.icon {
+  border: 2px solid forestgreen;
+  /* width: 100%; */
+}
+
+.icon .lo_con {
+  border: 4px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 530px;
+}
+
+.lo_con .career_icon,
+.career_icon_1,
+.career_icon_2,
+.career_icon_3,
+.career_icon_4,
+.career_icon_5,
+.career_icon_6,
+.career_icon_7,
+.career_icon_8,
+.career_icon_9 {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 35px;
+  padding: 2px 6px;
+  font-size: 16px;
+  /* height: 100px; */
+}
+
+/* .career_icon,
+.career_icon_1,
+.career_icon_2,
+.career_icon_3,
+.career_icon_4,
+.career_icon_5,
+.career_icon_6,
+.career_icon_7,
+.career_icon_8,
+.career_icon_9 {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 35px;
+  padding: 2px 6px;
+  font-size: 16px;
+} */
+
+.career_icon {
+  background-color: #f7dc8f;
+  width: 120px;
+}
+
+.career_icon_1 {
+  background-color: #8fd0f7;
+  width: 170px;
+}
+
+.career_icon_2 {
+  background-color: #f891be;
+  width: 140px;
+}
+
+.career_icon_3 {
+  background-color: #b791f8;
+  width: 140px;
+}
+
+.career_icon_4 {
+  background-color: #f78f98;
+  width: 100px;
+}
+
+.career_icon_5 {
+  background-color: #f7bd8f;
+  width: 140px;
+}
+
+.career_icon_6 {
+  background-color: #d08ff7;
+  width: 110px;
+}
+
+.career_icon_7 {
+  background-color: #9ce5d9;
+  width: 100px;
+}
+
+.career_icon_8 {
+  background-color: #b2db86;
+  width: 137px;
+}
+
+.career_icon_9 {
+  background-color: #91a9f8;
+  width: 150px;
+}
+
+.img_logo_1 {
+  border: 2px solid green;
+  width: 22px;
+  height: 22px;
+  align-self: center;
+  margin-right: 7px;
+}
+
+.careers {
+  border: 2px solid darkcyan;
+  text-align: center;
+}
+
+.more_info {
+  border: 2px solid red;
+}
+
+.learn_more p {
+  font-size: 34px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+  padding: 0px 60px;
+}
+
+.gen_career_1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 60px;
+}
+
+.career_pic img,
+.career_pic_1 img,
+.career_pic_2 img {
+  border-radius: 15px;
+  object-position: center;
+  object-fit: cover;
+  image-rendering: auto;
+}
+
+.training_guide,
+.training_guide_1,
+.training_guide_2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 130%;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.training_guide {
+  width: 280px;
+}
+
+.training_guide_1 {
+  width: 320px;
+}
+
+.training_guide_2 {
+  width: 350px;
+}
+
+.training_guide:hover,
+.training_guide_1:hover,
+.training_guide_2:hover {
+  color: #43b843;
+}
+
+.faqs1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 250px 0;
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 32px 0px;
+}
+
+.questionaire {
+  width: 700px;
+  margin-top: 32px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b4b1b1;
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon1 {
+  margin-left: 16px;
+  font-size: 24px;
+  color: #706d6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.answer p {
+  padding-top: 16px;
+  line-height: 1.6;
+  font-size: 16.5px;
+  color: #636060;
+}
+
+.questionaire.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+.questionaire.active .icon1 {
+  transform: rotate(45deg);
+}
+
+.communicate {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+}
+
+.quick_check {
+  padding-top: 70px;
+}
+
+.talk_to_us {
+  color: #25a125;
+  margin-bottom: 20px;
+}
+
+.ready_to_empower p {
+  font-size: 47px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  width: 450px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.intro_call {
+  color: #706d6d;
+  font-size: 20px;
+  width: 550px;
+}
+
+.btn_3 {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn_3 a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #25a125;
+  font-size: 19px;
+  padding: 16px 25px;
+  width: 170px;
+  text-align: center;
+  border-radius: 32px;
+}
+
+.cite {
+  color: #514e4e;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 45px;
+  font-size: 16px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 952px) {
+  nav .links {
+    width: 30%;
+  }
+
+  nav .links_1 {
+    margin-left: 175px;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 1199px) {
+  .career_pic img {
+    width: 99%;
+  }
+
+  .career_pic_1 img {
+    width: 90%;
+    margin-left: 12.5px;
+  }
+
+  .career_pic_2 img {
+    width: 90%;
+  }
+
+  .training_guide_1 {
+    width: 90%;
+    margin-left: 8px;
+  }
+
+  .training_guide_2 {
+    width: 97%;
+  }
+
+  .img_2 img {
+    border: 4px solid red;
+    position: absolute;
+    left: 700px;
+    top: 5px;
+  }
+
+  /* .img_3 img {
+    position: absolute;
+    left: 0;
+    top: 1150px;
+  } */
+
+  .img_4 img {
+    position: absolute;
+    left: 140px;
+    top: 1400px;
+  }
+}
+
+@media screen and (max-width: 809px) {
+  nav .img_logo {
+    float: none;
+    margin-left: 20px;
+    /* width: auto;
+    justify-content: start; */
+  }
+
+  nav .links {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    margin-bottom: 420px;
+    background-color: #ffffff;
+  }
+
+  nav .links_1 {
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    margin: 0 0 180px 0;
+    background-color: #ffffff;
+  }
+
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+
+  nav :checked ~ .links_1 {
+    bottom: 0;
+  }
+
+  nav .icon-burger {
+    display: block;
+  }
+
+  nav :checked ~ .icon-burger .line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  nav :checked ~ .icon-burger .line:nth-child(2) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .trainings h3 {
+    width: 300px;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  .mobile_employee h1 {
+    font-size: 45px;
+    width: 600px;
+  }
+
+  .elevate_skills p {
+    width: 450px;
+    font-size: 18px;
+  }
+
+  .btn {
+    margin-bottom: 35px;
+  }
+
+  .btn a {
+    font-size: 16px;
+    padding: 11.3px 8px;
+    border-radius: 25px;
+    width: 135px;
+    text-align: center;
+  }
+
+  .delivery {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .social_media {
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .rate_training {
+    flex-direction: column;
+  }
+
+  .rate_training .training_reduction,
+  .Improve_training,
+  .training_increase {
+    width: 100%;
+  }
+
+  .rate_training .process h3 {
+    font-size: 15.5px;
+    width: auto;
+  }
+
+  .mobile_training h3 {
+    font-size: 14px;
+  }
+
+  .align_training h1 {
+    font-size: 28px;
+    font-weight: bolder;
+    width: 100%;
+  }
+
+  .outdated_system p {
+    font-size: 17px;
+    width: 100%;
+  }
+
+  .mini_quote {
+    margin-bottom: 130px;
+  }
+
+  .online_training {
+    display: block;
+    padding: 0;
+    margin-bottom: 100px;
+  }
+
+  .gen_training {
+    width: 100%;
+    height: auto;
+    margin: 0 0 50px;
+  }
+
+  .align_training {
+    font-size: 16px;
+    line-height: 200%;
+    width: 100%;
+  }
+
+  .outdated_system {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .training_advice {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .general_speech {
+    width: 100%;
+    height: auto;
+  }
+
+  .speech p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .speech span {
+    font-size: 16px;
+  }
+
+  .mobile_work {
+    display: block;
+    padding: 15px;
+    margin-bottom: 100px;
+  }
+
+  .chef_pic img {
+    width: 100%;
+  }
+
+  .online_work {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .online_work .easy_training {
+    font-size: 13px;
+  }
+
+  .online_work .boost_performance {
+    font-size: 30px;
+    line-height: 125%;
+  }
+
+  .online_work .micro_training p {
+    font-size: 17px;
+  }
+
+  .btn_1 a {
+    font-size: 16px;
+    padding: 12px 16px;
+    width: 145px;
+    border-radius: 100px;
+  }
+
+  .gen_ads {
+    width: 100%;
+  }
+
+  .check_list {
+    font-size: 15px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .training_steps {
+    display: block;
+    gap: 40px;
+    padding: 15px;
+    margin-bottom: 100px;
+  }
+
+  .effective_training {
+    font-size: 20px;
+  }
+
+  .ease_training {
+    margin-bottom: 50px;
+  }
+
+  .simple_kuji {
+    font-size: 16.5px;
+    width: 100%;
+  }
+
+  .btn_2 a {
+    font-size: 16px;
+    padding: 11px 18px;
+    width: 135px;
+  }
+
+  .simply_training {
+    width: 100%;
+  }
+
+  .onboarding_pic img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .kuji_creativity,
+  .training_sec {
+    margin-bottom: 40px;
+  }
+
+  .flexible_training .train_employees {
+    font-size: 20px;
+  }
+
+  .building_block p,
+  .share_link p,
+  .understand_training p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .pro_service {
+    margin-bottom: 600px;
+  }
+
+  .img_1 img {
+    left: 0;
+    top: 35px;
+  }
+
+  .img_2 img {
+    position: absolute;
+    left: 120px;
+    top: 5px;
+  }
+
+  .img_3 img {
+    position: absolute;
+    left: 0;
+    top: 1570px;
+  }
+
+  .img_4 img {
+    position: absolute;
+    left: 140px;
+    top: 1850px;
+  }
+
+  .africa_mobile {
+    border: 2px solid slateblue;
+    margin-top: 320px;
+    /* width: 100%; */
+  }
+
+  .success_workforce p {
+    border: 2px solid mediumturquoise;
+    font-size: 32px;
+    line-height: 130%;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    /* text-align: center; */
+  }
+
+  .face_across p {
+    border: 2px solid navy;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  .icon .lo_con {
+    border: 4px solid red;
+    /* width: 100%; */
+    padding: 0;
+    margin: 0;
+  }
+
+  .lo_con .career_icon,
+  .career_icon_1,
+  .career_icon_2,
+  .career_icon_3,
+  .career_icon_4,
+  .career_icon_5,
+  .career_icon_6,
+  .career_icon_7,
+  .career_icon_8,
+  .career_icon_9 {
+    border: 2px solid red;
+  }
+
+  .more_info {
+    padding: 15px;
+  }
+
+  .learn_more p {
+    font-size: 30px;
+    padding: 0;
+    width: 70%;
+  }
+
+  .gen_career_1 {
+    display: block;
+    padding: 0;
+  }
+
+  .career_pic img,
+  .career_pic_1 img,
+  .career_pic_2 img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .training_guide,
+  .training_guide_1,
+  .training_guide_2 {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .training_guide,
+  .training_guide_1 {
+    margin-bottom: 20px;
+  }
+
+  .faqs1 {
+    margin: 100px 0px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .questionaire {
+    width: 100%;
+  }
+
+  .question p {
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .answer p {
+    font-size: 16px;
+  }
+  .icon1 {
+    font-size: 24px;
+  }
+
+  .communicate {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .quick_check {
+    padding-top: 0px;
+  }
+
+  .ready_to_empower p {
+    font-size: 40px;
+    width: 100%;
+    line-height: 120%;
+  }
+
+  .intro_call {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .dual_pic img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .btn_3 a {
+    font-size: 16px;
+    padding: 14px 23px;
+    width: 140px;
+  }
+
+  .btn_3 {
+    justify-content: center;
+  }
+
+  .cite {
+    color: #514e4e;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .cite .mini_cite {
+    margin-bottom: 10px;
+  }
+}
