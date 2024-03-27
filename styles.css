@@ -86,7 +86,7 @@
 .section-wrapper {
   margin-top: 210px;
 }
-.section_1 {
+.trainings_section {
   width: 100%;
   text-align: center;
 }
@@ -100,15 +100,12 @@
 .trainings,
 .mobile_employee,
 .elevate_skills,
-.btn1,
-.img_section_1,
+.get_started_btn1,
+.rider_img_section,
 .shortcut_delivery,
 .media-links,
 .ratings,
-.process_1,
-.process_2,
-.process_3,
-.mobile_training_wrapper {
+.process {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +116,7 @@
   line-height: 65px;
   letter-spacing: 1.1px;
   margin-bottom: 23px;
-  max-width: 600px;
+  width: 600px;
 }
 .elevate_skills p {
   font-size: 20px;
@@ -128,9 +125,9 @@
   line-height: 32px;
   letter-spacing: 0.2px;
   margin-bottom: 30px;
-  max-width: 740px;
+  width: 750px;
 }
-.btn1 a {
+.get_started_btn1 a {
   text-decoration: none;
   color: #ffffff;
   background-color: #1d9f4d;
@@ -141,7 +138,7 @@
   border-radius: 32px;
   margin-bottom: 80px;
 }
-.img_section_1 img {
+.rider_img_section img {
   max-width: 82%;
   height: auto;
   border-radius: 25px;
@@ -175,9 +172,7 @@
   margin-bottom: 25px;
   gap: 12px;
 }
-.reduce_cost,
-.retention,
-.increase_delivering {
+.ratings_square {
   text-align: center;
   width: 360px;
   height: 150px;
@@ -193,27 +188,25 @@
 .increase_delivering {
   background: #9ce5d9;
 }
-.percent_1 p {
+.rate_percent p {
   font-size: 40px;
   font-weight: 600;
   width: 100%;
 }
-.process_1 p,
-.process_2 p,
-.process_3 p {
+.process p {
   font-size: 16px;
   width: 270px;
   margin-top: 5px;
   line-height: 22px;
 }
-.process_1 p {
-  color: #374163;
+.reduce {
+  color: #2a3b72;
 }
-.process_2 p {
+.improve {
   color: #553667;
 }
-.process_3 p {
-  color: #406b64;
+.delivering {
+  color: #33665d;
 }
 .stats_quote p {
   font-size: 12px;
@@ -298,7 +291,13 @@
   .section-wrapper {
     margin-top: 150px;
   }
-  .img_section_1 img {
+  .mobile_employee h1 {
+    width: 100%;
+  }
+  .elevate_skills p {
+    width: 75%;
+  }
+  .rider_img_section img {
     max-width: 95%;
   }
   .media-links {
@@ -315,10 +314,8 @@
   .increase_delivering {
     width: 100%;
   }
-  .process_1 p,
-  .process_2 p,
-  .process_3 p {
-    width: 81%;
+  .process p {
+    width: 80%;
   }
   .mobile_training_wrapper {
     gap: 12px;
@@ -390,7 +387,7 @@
   .mobile_btn {
     text-align: center;
     background-color: white;
-    height: 400px;
+    height: 800px;
   }
   .mobile_btn a .btn {
     border: none;
@@ -428,13 +425,13 @@
     font-size: 18px;
     margin-bottom: 20px;
   }
-  .btn1 a {
+  .get_started_btn1 a {
     font-size: 16px;
     padding: 12px 8px;
     width: 135px;
     margin-bottom: 50px;
   }
-  .img_section_1 img {
+  .rider_img_section img {
     max-width: 100%;
     border-radius: 15px;
     margin-bottom: 30px;
@@ -454,20 +451,19 @@
   .ratings {
     flex-direction: column;
   }
-  .reduce_cost,
-  .retention,
-  .increase_delivering {
+  .ratings_square {
     width: 100%;
+  }
+  .reduce_cost,
+  .increase_delivering {
     height: 125px;
-    padding-top: 20px;
+    padding: 20px;
   }
   .retention {
-    height: 150px;
-    padding-top: 26px;
+    height: 140px;
+    padding: 30px;
   }
-  .process_1 p,
-  .process_2 p,
-  .process_3 p {
+  .process p {
     width: 84%;
   }
   .mobile_training_wrapper {
@@ -496,5 +492,20 @@
   }
 }
 
-
+@media screen and (max-width: 420px) {
+  .ratings_square {
+    width: 100%;
+    height: auto;
+  }
+  .reduce_cost,
+  .increase_delivering {
+    padding: 16px;
+  }
+  .retention {
+    padding: 18px;
+  }
+  .improve p {
+    width: 86%;
+  }
+}
 
