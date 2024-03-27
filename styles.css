@@ -291,28 +291,6 @@
   font-weight: 600;
 }
 
-/* @media only screen and (min-width: 659px) and (max-width: 809px) {
-  
-  
-} */
-
-@media only screen and (min-width: 1177px) and (max-width: 1189px) {
-  .mobile_employee h1 {
-    max-width: 960px;
-  }
-  .elevate_skills p {
-    max-width: 810px;
-  }
-}
-
-@media only screen and (min-width: 1077px) and (max-width: 1176px) {
-  .mobile_employee h1 {
-    max-width: 950px;
-  }
-  .elevate_skills p {
-    max-width: 790px;
-  }
-}
 @media only screen and (min-width: 810px) and (max-width: 1199px) {
   .container {
     padding: 40px;
@@ -517,32 +495,6 @@
     width: 100%;
   }
 }
-@media only screen and (min-width: 420px) and (max-width: 809px) {
-  .retention {
-    height: 125px;
-    padding-top: 20px;
-  }
-  .process_2 p {
-    width: 86%;
-  }
-}
-@media only screen and (min-width: 408px) and (max-width: 419px) {
-  .process_3 p {
-    width: 86%;
-  }
-}
-@media only screen and (min-width: 200px) and (max-width: 407px) {
-  .reduce_cost,
-  .retention,
-  .increase_delivering {
-    height: 150px;
-    padding-top: 25px;
-  }
-}
-@media screen and (max-width: 201px) {
-  .reduce_cost,
-  .retention,
-  .increase_delivering {
-    height: 170px;
-  }
-}
+
+
+
