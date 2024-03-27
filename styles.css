@@ -1,20 +1,20 @@
 @font-face {
-  font-family: "Soehne";
-  src: local("Soehne"),
-    url("./assest/font/TestSöhne-Buch.otf") format("opentype");
+  font-family: "Neue Haas Unica Pro Heavy";
+  src: local("Neue Haas Unica Pro Heavy"),
+    url("./assest/font/NeueHaasUnicaProHeavy.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "Signifier";
-  src: local("Signifier"),
-    url("./assest/font/TestSignifier-Thin.otf") format("opentype");
+  font-family: "Inter";
+  src: local("Inter"),
+    url("./assest/font/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter";
 }
 
 .container {
@@ -49,7 +49,7 @@
 .logo img {
   width: 61px;
   height: 46px;
-  margin: 8px 60px 0px 35px;
+  margin: 0px 60px 0px 35px;
 }
 .mobile-link-wrapper {
   display: none;
@@ -72,69 +72,77 @@
 }
 .desktop_btn {
   text-align: center;
-  margin: 8px 35px 0px 0px;
+  margin: 0px 35px 0px 0px;
 }
 .desktop_btn a .btn {
   border: none;
   color: white;
   background: #000000;
-  padding: 5px 11px;
+  padding: 7px 14px;
   font-size: 16px;
+  font-weight: 400;
   border-radius: 30px;
 }
 .section-wrapper {
   margin-top: 210px;
 }
-.section_1 {
+.trainings_section {
   width: 100%;
   text-align: center;
 }
 .trainings p {
   width: 100%;
-  color: #43b843;
-  font-size: 15px;
-  margin-bottom: 20px;
+  color: #349634;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 14px;
 }
 .trainings,
 .mobile_employee,
 .elevate_skills,
-.btn1,
-.img_section_1,
+.get_started_btn1,
+.rider_img_section,
 .shortcut_delivery,
-.media-links {
+.media-links,
+.ratings,
+.rate_percent,
+.process {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .mobile_employee h1 {
+  font-family: "Neue Haas Unica Pro Heavy";
   font-size: 52px;
-  font-weight: 600;
   line-height: 65px;
-  margin-bottom: 20px;
-  max-width: 600px;
+  letter-spacing: 1.1px;
+  margin-bottom: 23px;
+  width: 600px;
 }
 .elevate_skills p {
-  font-size: 19px;
-  font-weight: 200;
-  color: #888484;
+  font-size: 20px;
+  font-weight: 300;
+  color: #545151;
+  line-height: 32px;
+  letter-spacing: 0.2px;
   margin-bottom: 30px;
-  max-width: 740px;
+  width: 750px;
 }
-.btn1 a {
+.get_started_btn1 a {
   text-decoration: none;
   color: #ffffff;
   background-color: #1d9f4d;
   text-align: center;
   font-size: 19px;
-  padding: 18px 20px;
+  padding: 20px;
   width: 175px;
   border-radius: 32px;
   margin-bottom: 80px;
 }
-.img_section_1 img {
+.rider_img_section img {
   max-width: 82%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 25px;
   margin-bottom: 70px;
 }
 .shortcut_delivery {
@@ -143,6 +151,7 @@
 }
 .media-links {
   gap: 10px;
+  margin-bottom: 110px;
 }
 .whatsapp_link img {
   width: 130px;
@@ -156,35 +165,80 @@
 .qrcode_link img {
   width: 114px;
 }
-
-/* @media only screen and (min-width: 659px) and (max-width: 809px) {
-  
-  
-} */
-
-@media only screen and (min-width: 1177px) and (max-width: 1189px) {
-  .mobile_employee h1 {
-    max-width: 960px;
-  }
-  .elevate_skills p {
-    max-width: 810px;
-  }
+.ratings {
+  width: 100%;
+  margin-bottom: 25px;
+  gap: 12px;
+}
+.ratings_square {
+  text-align: center;
+  width: 360px;
+  height: 150px;
+  padding-top: 26px;
+  border-radius: 23px;
+}
+.reduce_cost {
+  background: #91a9f8;
+}
+.retention {
+  background: #d08ff7;
+}
+.increase_delivering {
+  background: #9ce5d9;
+}
+.rate_percent p {
+  font-size: 40px;
+  font-weight: 600;
+  width: 100%;
+}
+.process p {
+  font-size: 16px;
+  width: 270px;
+  margin-top: 5px;
+  line-height: 22px;
+}
+.reduce {
+  color: #2a3b72;
+}
+.improve {
+  color: #553667;
+}
+.delivering {
+  color: #33665d;
+}
+.stats_quote p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #949090;
+  text-align: center;
 }
 
-@media only screen and (min-width: 1077px) and (max-width: 1176px) {
-  .mobile_employee h1 {
-    max-width: 950px;
-  }
-  .elevate_skills p {
-    max-width: 790px;
-  }
-}
 @media only screen and (min-width: 810px) and (max-width: 1199px) {
   .section-wrapper {
     margin-top: 150px;
   }
-  .img_section_1 img {
+  .mobile_employee h1 {
+    width: 100%;
+  }
+  .elevate_skills p {
+    width: 75%;
+  }
+  .rider_img_section img {
     max-width: 95%;
+  }
+  .media-links {
+    margin-bottom: 40px;
+  }
+  .ratings {
+    margin-bottom: 25px;
+  }
+  .reduce_cost,
+  .retention,
+  .increase_delivering {
+    width: 100%;
+  }
+  .process p {
+    width: 80%;
   }
 }
 
@@ -202,6 +256,7 @@
     right: 0;
     top: 20px;
     margin-right: 20px;
+    transition: all 0.3s ease-in-out;
   }
   .change .line1 {
     transform: translateY(5px) rotate(-45deg);
@@ -210,7 +265,7 @@
     transform: translateY(-5px) rotate(45deg);
   }
   .logo img {
-    margin: 12px;
+    margin: 12px 12px 0px;
   }
   .desktop_nav_links {
     display: none;
@@ -220,13 +275,12 @@
   }
   .mobile-link-wrapper {
     display: block;
-    background: #ffffff;
+    background-color: #ffffff;
   }
   .mobile_nav_links ul {
     list-style-type: none;
     text-align: center;
     line-height: 40px;
-    margin-bottom: 10px;
   }
   .mobile_nav_links li a {
     text-decoration: none;
@@ -234,6 +288,8 @@
   }
   .mobile_btn {
     text-align: center;
+    background-color: white;
+    height: 800px;
   }
   .mobile_btn a .btn {
     border: none;
@@ -244,7 +300,7 @@
     border-radius: 30px;
   }
   #links {
-    margin-top: 15px;
+    margin-top: 5px;
   }
   #links.hide {
     display: block;
@@ -271,22 +327,58 @@
     font-size: 18px;
     margin-bottom: 20px;
   }
-  .btn1 a {
+  .get_started_btn1 a {
     font-size: 16px;
     padding: 12px 8px;
     width: 135px;
     margin-bottom: 50px;
   }
-  .img_section_1 img {
+  .rider_img_section img {
     max-width: 100%;
     border-radius: 15px;
     margin-bottom: 30px;
   }
-  .shortcut_delivery,.media-links {
+  .shortcut_delivery,
+  .media-links {
     justify-content: flex-start;
     flex-wrap: wrap;
   }
   .media-links {
     gap: 5px;
+    margin-bottom: 20px;
+  }
+  .ratings {
+    flex-direction: column;
+  }
+  .ratings_square {
+    width: 100%;
+  }
+  .reduce_cost,
+  .increase_delivering {
+    height: 125px;
+    padding: 20px;
+  }
+  .retention {
+    height: 140px;
+    padding: 30px;
+  }
+  .process p {
+    width: 84%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .ratings_square {
+    width: 100%;
+    height: auto;
+  }
+  .reduce_cost,
+  .increase_delivering {
+    padding: 16px;
+  }
+  .retention {
+    padding: 18px;
+  }
+  .improve p {
+    width: 86%;
   }
 }
