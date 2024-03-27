@@ -105,9 +105,7 @@
 .shortcut_delivery,
 .media-links,
 .ratings,
-.process_1,
-.process_2,
-.process_3 {
+.process {
   display: flex;
   justify-content: center;
   align-items: center;
