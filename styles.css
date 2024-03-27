@@ -107,8 +107,7 @@
 .ratings,
 .process_1,
 .process_2,
-.process_3,
-.mobile_training_wrapper {
+.process_3 {
   display: flex;
   justify-content: center;
   align-items: center;
