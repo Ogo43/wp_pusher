@@ -18,9 +18,7 @@
 }
 
 .container {
-  /* background: greenyellow; */
   width: 100%;
-  padding: 15px;
 }
 .header {
   display: flex;
@@ -105,7 +103,8 @@
 .shortcut_delivery,
 .media-links,
 .ratings,
-.process {
+.process,
+.mobile_training_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,18 +138,18 @@
   margin-bottom: 80px;
 }
 .rider_img_section img {
-  max-width: 82%;
+  max-width: 80%;
   height: auto;
   border-radius: 25px;
   margin-bottom: 70px;
 }
 .shortcut_delivery {
   color: #615f5f;
-  margin-bottom: 10px;
 }
 .media-links {
   gap: 10px;
   margin-bottom: 110px;
+  padding: 15px;
 }
 .whatsapp_link img {
   width: 130px;
