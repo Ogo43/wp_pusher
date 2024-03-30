@@ -383,6 +383,21 @@
   line-height: 28px;
   margin-bottom: 150px;
 }
+.world_class_training {
+  width: 100%;
+  position: relative;
+  margin-bottom: 300px;
+}
+.dispatch_rider_pic img,
+.liberian_pic img,
+.nurse_pic img,
+.engineer_pic img {
+  width: 180px;
+  border-radius: 12px;
+}
+.nurse_pic img {
+  height: 210px;
+}
 
 @media only screen and (min-width: 810px) and (max-width: 1199px) {
   .section-wrapper {
