@@ -1,20 +1,29 @@
 @font-face {
+  font-family: "Inter", sans-serif;
+  src: local("Inter", sans-serif),
+    url("./assest/font/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+}
+@font-face {
   font-family: "Neue Haas Unica Pro Heavy";
   src: local("Neue Haas Unica Pro Heavy"),
     url("./assest/font/NeueHaasUnicaProHeavy.otf") format("opentype");
 }
-
 @font-face {
-  font-family: "Inter";
-  src: local("Inter"),
-    url("./assest/font/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+  font-family: "Neue Haas Unica Pro Bold";
+  src: local("Neue Haas Unica Pro Bold"),
+    url("./assest/font/NeueHaasUnicaPro-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Neue Haas Unica Pro Medium";
+  src: local("Neue Haas Unica Pro Medium"),
+    url("./assest/font/NeueHaasUnicaPro-Medium.ttf") format("truetype");
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -29,6 +38,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 999;
   height: 70px;
   width: 100%;
 }
@@ -105,7 +115,13 @@
 .ratings,
 .process,
 .mobile_training_wrapper,
-.easy_training {
+.easy_training,
+.successful_workforce,
+.face_across,
+.gen_career_path,
+.career_path,
+.careers_log,
+.title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -340,7 +356,7 @@
 }
 .checklist img {
   width: 24px;
-  height: 16px;
+  height: auto;
 }
 .effective_training {
   display: flex;
@@ -382,6 +398,251 @@
   width: 585px;
   line-height: 28px;
   margin-bottom: 150px;
+}
+.world_class_training {
+  width: 100%;
+  position: relative;
+  margin-bottom: 300px;
+}
+.gen_image_upper,
+.gen_image_lower {
+  width: 94%;
+  height: 150px;
+  position: relative;
+  margin: 0 auto;
+}
+.gen_image_lower {
+  margin-top: 32px;
+}
+.dispatch_rider_pic img,
+.liberian_pic img,
+.nurse_pic img,
+.engineer_pic img {
+  width: 150px;
+  border-radius: 12px;
+  position: absolute;
+}
+.nurse_pic img {
+  height: 200px;
+  bottom: 120px;
+}
+.dispatch_rider_pic img,
+.nurse_pic img {
+  left: 0;
+}
+.liberian_pic img,
+.engineer_pic img {
+  right: 0;
+}
+.dispatch_rider_pic img {
+  top: 50px;
+}
+.engineer_pic img {
+  bottom: 75px;
+}
+.liberian_pic img {
+  top: 0;
+  z-index: 11;
+}
+.pro_service {
+  text-align: center;
+}
+.world_class p {
+  color: #369a36;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.successful_workforce h1 {
+  font-size: 36px;
+  font-family: "Neue Haas Unica Pro Heavy";
+  width: 600px;
+  line-height: 47px;
+  margin-bottom: 16px;
+}
+.face_across p {
+  color: #676262;
+  font-size: 18px;
+  font-weight: 300;
+  width: 540px;
+  line-height: 27px;
+  margin-bottom: 40px;
+}
+.career_path {
+  width: 500px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.careers_log {
+  font-size: 16px;
+  padding: 7px 10px;
+  border-radius: 35px;
+  gap: 8px;
+  margin: 4px;
+}
+.career_icon {
+  width: 22px;
+  height: 22px;
+}
+.careers_1 {
+  background: #f7dc8f;
+}
+.careers_2 {
+  background: #8fd0f7;
+}
+.careers_3 {
+  background: #f891be;
+}
+.careers_4 {
+  background: #b791f8;
+}
+.careers_5 {
+  background: #f78f98;
+}
+.careers_6 {
+  background: #f7bd8f;
+}
+.careers_7 {
+  background: #d08ff7;
+}
+.careers_8 {
+  background: #9ce5d9;
+}
+.careers_9 {
+  background: #b2db86;
+}
+.careers_9 {
+  background: #b2db86;
+}
+.careers_10 {
+  background: #91a9f8;
+}
+.more_info {
+  margin-bottom: 300px;
+}
+.learn_more p {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Neue Haas Unica Pro Heavy";
+  text-align: start;
+  margin-left: 10rem;
+}
+.workforce_wrapper {
+  width: 80%;
+  margin: auto;
+}
+.workforce {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0px 0px 17px;
+}
+.gen_workforce img {
+  width: 94%;
+  border-radius: 20px;
+}
+.gen_workforce p {
+  font-size: 24px;
+  font-family: "Neue Haas Unica Pro Bold";
+  width: 355px;
+  padding: 2px;
+}
+.gen_workforce p:hover {
+  color: #43b843;
+}
+.faqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 300px;
+}
+.title p {
+  font-size: 36px;
+  font-family: "Neue Haas Unica Pro Heavy";
+  margin-bottom: 32px;
+}
+.questionaire {
+  width: 800px;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b4b1b1;
+  cursor: pointer;
+}
+.question p {
+  font-size: 20px;
+  font-family: "Neue Haas Unica Pro Medium";
+}
+.icon1 {
+  font-size: 30px;
+  color: #918b8b;
+  padding-top: 20px;
+  transition: transform 0.5s ease-in;
+}
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.answer p {
+  color: #636060;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 16px 0px;
+}
+.questionaire.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+.questionaire.active .icon1 {
+  transform: rotate(45deg);
+}
+.communicate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.quick_check {
+  margin-left: 115px;
+}
+.talk_to_us p {
+  color: #25a125;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.empower p {
+  font-size: 50px;
+  font-family: "Neue Haas Unica Pro Heavy";
+  width: 500px;
+  line-height: 64px;
+  margin-bottom: 25px;
+}
+.schedule_call p {
+  color: #5c5c5c;
+  font-size: 20px;
+  font-weight: 300;
+  width: 500px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  margin-bottom: 40px;
+}
+.dual_pic {
+  margin-right: 115px;
+}
+.dual_pic img {
+  width: 400px;
+  height: auto;
+}
+.cite {
+  display: flex;
+  justify-content: center;
+  color: #575353;
+  font-size: 16px;
+  gap: 22px;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 810px) and (max-width: 1199px) {
@@ -480,6 +741,73 @@
     width: 97%;
     margin-bottom: 50px;
   }
+  .gen_image_upper,
+  .gen_image_lower {
+    width: 93%;
+    height: 238px;
+  }
+  .nurse_pic img {
+    top: 15px;
+  }
+  .engineer_pic img {
+    bottom: 110px;
+  }
+  .successful_workforce h1 {
+    width: 69%;
+  }
+  .face_across p,
+  .career_path {
+    width: 64%;
+  }
+  .world_class_training {
+    margin-bottom: 40px;
+  }
+  .more_info {
+    margin-bottom: 300px;
+  }
+  .learn_more p {
+    margin-left: 1.5rem;
+  }
+  .workforce_wrapper {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .gen_workforce img,
+  .gen_workforce p {
+    width: 95%;
+  }
+  .more_info {
+    margin-bottom: 120px;
+  }
+  .questionaire {
+    width: 93%;
+  }
+  .faqs{
+    margin-bottom: 170px;
+  }
+  .communicate {
+    display: block;
+  }
+  .quick_check {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .empower p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .schedule_call p {
+    width: 95%;
+    margin-left: 30px;
+    letter-spacing: 0.2px;
+  }
+  .dual_pic {
+    text-align: center;
+    margin-right: 0px;
+  }
+  .dual_pic img {
+    width: 55%;
+  }
 }
 
 @media screen and (max-width: 809px) {
@@ -559,8 +887,9 @@
   .media_section,
   .ratings_section,
   .mobile_training_section,
-  .effective_training {
-    padding: 0px 20px;
+  .effective_training,
+  .more_info {
+    padding: 0px 15px;
   }
   .trainings p {
     width: 70%;
@@ -685,6 +1014,89 @@
     width: 98%;
     margin-bottom: 50px;
   }
+  .gen_image_upper {
+    margin-bottom: 130px;
+  }
+  .successful_workforce h1 {
+    font-size: 32px;
+  }
+  .face_across p,
+  .career_path {
+    width: 90%;
+  }
+  .nurse_pic img {
+    top: 200px;
+    z-index: -1;
+  }
+  .engineer_pic img {
+    top: 0px;
+  }
+  .world_class_training {
+    margin-bottom: 130px;
+  }
+  .workforce_wrapper {
+    width: 100%;
+  }
+  .workforce {
+    grid-template-columns: auto;
+    padding: 0px;
+  }
+  .learn_more p {
+    font-size: 32px;
+    margin-left: 0.4rem;
+  }
+  .workforce_wrapper {
+    width: 99%;
+    padding-top: 10px;
+  }
+  .gen_workforce img {
+    width: 100%;
+    border-radius: 25px;
+  }
+  .gen_workforce p {
+    width: 100%;
+    padding: 15px 0px;
+  }
+  .questionaire {
+    width: 97%;
+  }
+  .more_info {
+    margin-bottom: 80px;
+  }
+  .faqs{
+    margin-bottom: 150px;
+  }
+  .communicate {
+    display: block;
+  }
+  .quick_check {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .empower p {
+    font-size: 40px;
+    line-height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .schedule_call p {
+    font-size: 18px;
+    width: 95%;
+    margin-left: 20px;
+    letter-spacing: 0.2px;
+  }
+  .dual_pic {
+    text-align: center;
+    margin-right: 0px;
+  }
+  .dual_pic img {
+    width: 96%;
+  }
+  .cite {
+    gap: 15px;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 420px) {
   .ratings_square {
@@ -704,5 +1116,23 @@
   .checklist img {
     width: 24px;
     height: 16px;
+  }
+  .nurse_pic img {
+    top: 0;
+    margin-top: -550px;
+    position: relative;
+    z-index: 1;
+  }
+  .engineer_pic img {
+    top: 70px;
+  }
+  .world_class_training {
+    margin-bottom: 250px;
+  }
+  .faqs,.communicate{
+    padding: 10px;
+  }
+  .schedule_call p {
+    margin-left: 6px;
   }
 }
