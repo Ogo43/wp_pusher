@@ -1098,6 +1098,7 @@
     text-align: center;
   }
 }
+
 @media screen and (max-width: 420px) {
   .ratings_square {
     width: 100%;
@@ -1136,3 +1137,4 @@
     margin-left: 6px;
   }
 }
+
